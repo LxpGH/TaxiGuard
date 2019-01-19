@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#fdfdfd"
+               android:orientation="vertical"
+>
+    <include
+            android:id="@+id/dr_sh_title"
+            layout="@layout/dr_sh_title"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fdfdfd"
+            android:orientation="horizontal"
+            android:padding="4dp">
+        <EditText
+                android:id="@+id/lpn_ds"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:paddingStart="4dp"
+                android:hint="/输入车牌号/"
+                android:gravity="center"
+                android:textColorHint="#ce3384fd"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/sndtxt_bg"/>
+        <!--todo
+2018/12/28:修改了文本输入框和发送按纽的边框样式
+-->
+        <Button
+                android:id="@+id/lpn_sh"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/sndtxt_bg"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="查询"
+                android:textColor="#000000"
+        />
+    </LinearLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/bar_bg">
+        <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:text="评价用户"
+        android:textColor="@color/sys_blue"
+        android:gravity="center"/>
+    <RelativeLayout
+            android:id="@+id/line_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/middle_line"
+            android:layout_centerInParent="true"/>
+        <TextView
+                android:id="@+id/space_text"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"/>
+        <TextView
+                android:id="@+id/look_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/space_text"
+                android:text="查看具体评价"
+                android:textColor="@color/sys_blue"
+                android:gravity="center"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/result_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+</LinearLayout>
+

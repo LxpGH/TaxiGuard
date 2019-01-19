@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.design.lxp.taxiguard">
+
+    <!-- 互联网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 添加sd卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="出行卫士"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"> <!-- 将顶部默认标题栏去除 -->
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".SuccessActivity">
+        </activity>
+        <activity android:name=".FriendActivity">
+        </activity>
+        <activity android:name=".TabHostActivity">
+        </activity>
+        <activity android:name=".ShareActivity">
+        </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".InfoActivity">
+        </activity>
+        <activity android:name=".EvulateActivity">
+        </activity>
+        <activity android:name=".DriverSearchActivity">
+        </activity>
+        <activity android:name=".DriverInfoActivity">
+        </activity>
+    </application>
+
+</manifest>

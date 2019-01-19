@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="#e9f5fd"
+>
+    <include
+            android:id="@+id/success_title"
+            layout="@layout/success_title"
+    />
+    <!--此处图片代码-->
+    <ImageView
+            android:id="@+id/success_img"
+            android:layout_below="@+id/success_title"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/success_login"
+    />
+    <LinearLayout
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/success_img"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+    />
+    <Button
+            android:id="@+id/btn_go"
+            android:text="登录帐号"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/codebtn_bg"
+            android:layout_below="@+id/space"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

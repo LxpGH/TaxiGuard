@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="#e9f5fd"
+>
+
+    <include
+            android:id="@+id/register_title"
+            layout="@layout/register_title"
+    />
+    <EditText
+            android:hint="手机号/邮箱"
+            android:id="@+id/rg_user"
+            android:textColor="#b7181717"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="65dp"
+    />
+   <!-- <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/user"
+    android:layout_alignBottom="@+id/user"
+    />-->
+    <EditText
+            android:hint="密码(至少包含6位字母或数字)"
+            android:id="@+id/rg_pwd"
+            android:textColor="#b7646262"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rg_user"
+    />
+    <EditText
+            android:hint="确认密码"
+            android:id="@+id/re_pwd"
+            android:password="true"
+            android:textColor="#b7646262"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rg_pwd"
+    />
+    <!-- <ImageView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignRight="@+id/user"
+  android:layout_alignBottom="@+id/user"
+  />-->
+    <EditText
+            android:hint="请输入验证码"
+            android:id="@+id/tx_code"
+            android:textColor="#b7646262"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/re_pwd" android:layout_alignParentStart="true"/>
+    <Button
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tx_code"
+            android:layout_alignRight="@+id/tx_code"
+            android:background="@drawable/codebtn_bg"
+            android:layout_alignParentEnd="true" android:id="@+id/btn_code"/>
+    <Button
+            android:text="注册新账号"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/codebtn_bg"
+            android:id="@+id/btn_regst"
+            android:layout_below="@+id/tx_code"
+            android:layout_centerHorizontal="true"/>
+    <!--此处添加加载圈ProgressBar-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="450dp"
+    >
+
+    </LinearLayout>
+
+</RelativeLayout>

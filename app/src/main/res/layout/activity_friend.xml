@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdfdfd">
+    <include
+        android:id="@+id/friend_title"
+        layout="@layout/friend_title"
+    />
+    <SearchView
+            android:id="@+id/search"
+            android:queryHint="搜索"
+            android:layout_below="@+id/friend_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/search_bg"
+            android:iconifiedByDefault="true"
+            android:searchIcon="@drawable/s3"
+            android:focusedByDefault="true"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            />
+
+    <!--ListView组件
+    <ListView
+            android:id="@+id/friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp"
+            android:scrollbars="horizontal"
+            style="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+            android:divider="@null"
+            android:textFilterEnabled="false"
+            android:cacheColorHint="#000000"
+    />
+    -->
+<!--ExpandableListView组件作为联系人列表视图-->
+    <ExpandableListView
+            android:id="@+id/friendView"
+            android:layoutDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:layout_alignParentStart="true"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:divider="#dc5783ca"
+            android:headerDividersEnabled="true"
+            android:dividerHeight="0.5dp"
+            android:childDivider="#d2000000"
+            android:childIndicator="@drawable/back"
+    />
+</RelativeLayout>

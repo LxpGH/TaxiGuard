@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:tools="http://schemas.android.com/tools"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="#fdfdfd"
+                 android:orientation="vertical"
+>
+    <include
+            android:id="@+id/chat_title"
+            layout="@layout/chat_title"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fdfdfd"
+            android:orientation="horizontal"
+            android:padding="4dp">
+        <EditText
+                android:id="@+id/snd_msg"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:paddingStart="4dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/sndtxt_bg"/>
+        <!--todo
+2018/12/28:修改了文本输入框和发送按纽的边框样式
+-->
+        <Button
+                android:id="@+id/send_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/sndtxt_bg"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="发送"
+                android:textColor="#000000"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/Others"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fdfdfd"
+            android:orientation="horizontal">
+        <!--todo image src
+        -->
+        <Button
+                android:id="@+id/location_btn"
+                style="@style/OthersStyle"
+                android:text="定位发送"
+                android:textColor="@color/sys_blue"
+                android:src="@drawable/xiaolan"
+        />
+        <ImageButton
+                android:id="@+id/driver_btn"
+                style="@style/OthersStyle"
+                android:src="@drawable/xiaolan"
+        />
+        <ImageButton
+                android:id="@+id/photo_btn"
+                style="@style/OthersStyle"
+                android:src="@drawable/xiaolan"
+
+        />
+        <ImageButton
+                android:id="@+id/vibrate_btn"
+                style="@style/OthersStyle"
+                android:src="@drawable/xiaolan"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
+

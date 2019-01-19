@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/login_back"
+>
+    <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/login_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp">
+
+
+    </LinearLayout>
+    <include
+            android:id="@+id/login_title"
+            layout="@layout/login_title"
+    />
+    <EditText
+            android:hint="手机号/邮箱:"
+            android:id="@+id/user"
+            android:textColor="#b7181717"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="65dp"
+    />
+
+    <EditText
+            android:hint="密码(至少包含6位字母或数字)"
+            android:id="@+id/pwd_lg"
+            android:password="true"
+            android:textColor="#b7181717"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/user"
+            android:layout_alignStart="@+id/user"/>
+    <CheckBox
+            android:id="@+id/ckb_lg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pwd_lg"
+    android:layout_alignLeft="@+id/pwd_lg"
+    android:text="记住账号"
+    android:textColor="@color/black"
+    android:checked="false"/>
+    <Button
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_login"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="395dp"
+            android:layout_marginLeft="115dp"
+            android:visibility="visible"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="450dp"
+    >
+
+    </LinearLayout>
+</RelativeLayout>
